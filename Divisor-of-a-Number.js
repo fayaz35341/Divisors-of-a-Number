@@ -1,14 +1,10 @@
 class Solution {
-    armstrongNumber(n){
-        let count=0
-        let r=n
-        while (n>0){
-            let ld=n%10
-            count+=(ld*ld*ld)
-            n=Math.floor(n/10)
+    Divisor(n){
+        for(let i=1;i<n+1;i++){
+            if(n%i===0){
+                console.log(i," ")
         }
-        return count===r
     }
 }
-console.log(new Solution().armstrongNumber(153))
+console.log(new Solution().Diviso(6))
 
